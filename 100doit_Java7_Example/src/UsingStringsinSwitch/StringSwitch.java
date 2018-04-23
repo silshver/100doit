@@ -1,7 +1,5 @@
 package UsingStringsinSwitch;
 
-import trade.trade;
-
 public class StringSwitch {
 	private static final String PENDING = "PENDING";
 	private static final String EXECUTE = "EXECUTE";

@@ -1,4 +1,4 @@
-package trade;
+package UsingStringsinSwitch;
 import java.util.Random;
 
 public class trade {

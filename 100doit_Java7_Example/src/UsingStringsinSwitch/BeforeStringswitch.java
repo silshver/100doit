@@ -1,7 +1,5 @@
 package UsingStringsinSwitch;
 
-import trade.trade;
-
 public class BeforeStringswitch {
 	private void processTrade(trade t) {
 		String status = t.getStatus();
