@@ -13,16 +13,16 @@ public class BeforeStringswitch {
 		}
 	}
 
-	private void newTrade(trade t) {
-		//impl goes here
+	private void pendingTrade(trade t) {
+		System.out.println("This is the Pending Trade");
 	}
 
 	private void executeTrade(trade t) {
-		//impl goes here
+		System.out.println("This is the Execute Trade");
 	}
 
-	private void pendingTrade(trade t) {
-		//impl goes here
+	private void newTrade(trade t) {
+		System.out.println("This is the New Trade");
 	}
 
 	public static void main(String[] args) {

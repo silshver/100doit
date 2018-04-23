@@ -1,5 +1,6 @@
 package UsingStringsinSwitch;
 
+
 public class StringSwitch {
 	private static final String PENDING = "PENDING";
 	private static final String EXECUTE = "EXECUTE";
@@ -25,15 +26,15 @@ public class StringSwitch {
 	}
 
 	private void pendingTrade(trade t) {
-		// impl goes here
+		System.out.println("This is the Pending Trade");
 	}
 
 	private void executeTrade(trade t) {
-		// impl goes here
+		System.out.println("This is the Execute Trade");
 	}
 
 	private void newTrade(trade t) {
-		// impl goes here
+		System.out.println("This is the New Trade");
 	}
 
 	public static void main(String[] args) {
