@@ -12,7 +12,7 @@ public class Before7ARM {
 		try {
 			fos = new FileOutputStream("movies.txt");
 			dos = new DataOutputStream(fos);
-			dos.writeUTF("Java 7 Block Buster");
+			dos.writeUTF("Before Java 7 Block Buster");
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
