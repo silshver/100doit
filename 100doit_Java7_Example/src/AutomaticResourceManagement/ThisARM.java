@@ -11,7 +11,7 @@ public class ThisARM {
 				DataOutputStream dos = new DataOutputStream(fos)) {
 			dos.writeUTF("Java 7 Block Buster");
 		} catch (IOException e) {
-			// log the exception
+			System.out.println("IOException !!!!!! Java7");
 		}
 	}
 }
