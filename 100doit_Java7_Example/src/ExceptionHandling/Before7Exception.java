@@ -9,7 +9,7 @@ import java.text.*;
 
 /**
  * 파일명	 	: 자바7 이전의 Catch 관리.
- * 설명		: 자바7 이전의 버전은 Catch문을 여러개를 써서 Exception을 관리 하였다.
+ * 설명		: 자바7 이전의 버전은 Catch문을 여러개를 써서 Exception을 관리 하였습니다.
  * @author 100doit
  *
  */

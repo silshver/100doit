@@ -9,7 +9,7 @@ import java.text.*;
 
 /**
  * 파일명	 	: Multi Catch
- * 설명		: 자바 7 이후에는 Multi Catch를 이용하여 하나의 Catch문으로 여러개의 Exception을 관리할 수 있다.
+ * 설명		: 자바 7 이후에는 Multi Catch를 이용하여 하나의 Catch문으로 여러개의 Exception을 관리할 수 있습니다.
  * @author 100doit
  *
  */
