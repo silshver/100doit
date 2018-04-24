@@ -1,7 +1,7 @@
 package PrivateInterfaceMethod;
 
-public class java8interface {
-	public interface ICustomerService {
+public interface java8interface {
+
 		 
 		default void healthcare(String name) {
 			System.out.println(name + " registers for customer service.");
@@ -12,5 +12,5 @@ public class java8interface {
 			System.out.println(name + " registers for customer service.");
 			System.out.println("-- get Consultation Service.");
 		}
-	}
+	
 }

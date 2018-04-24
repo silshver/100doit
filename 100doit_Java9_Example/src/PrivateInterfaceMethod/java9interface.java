@@ -1,7 +1,7 @@
 package PrivateInterfaceMethod;
 
-public class java9interface {
-	public interface ICustomerService {
+public interface java9interface {
+
 		 
 		default void healthcare(String name) {
 			register(name);
@@ -16,5 +16,5 @@ public class java9interface {
 		private void register(String name) {
 			System.out.println(name + " registers for customer service.");
 		}
-	}
+	
 }
