@@ -2,7 +2,7 @@ package PrivateInterfaceMethod;
 
 /**
  * 파일명	 	: Java9의 interface method
- * 설명		: Java9에서 새로 추가된 private method에 대한 예제입니다. private method도 정적 메소드이지만 상속이 불가능한 메소드입니다.
+ * 설명		: Java9에서 새로 추가된 private method에 대한 예제입니다. private method는 추상 메소드이면 안됩니다. 또한 상속이 불가능한 메소드입니다.
  * @author 100doit
  *
  */
