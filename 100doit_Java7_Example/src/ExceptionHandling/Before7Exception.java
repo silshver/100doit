@@ -23,7 +23,8 @@ public class Before7Exception {
 		   		
 		   	}
 		   	catch(IOException ioe) {
-		   		// I am an inexperienced or lazy programmer here.
+		   		// have to use several Exception. So use catches.
+		   		// 여러개의 catch문 사용
 		   	}
 	}
 

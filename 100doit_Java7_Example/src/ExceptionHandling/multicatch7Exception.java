@@ -20,7 +20,8 @@ public class multicatch7Exception {
 		   		Date date = format.parse(line);
 		   	}
 		   	catch(ParseException | IOException e) {
-		   		
+		   		// catch문 1개로 대체가능
+		   		// can use just one catch.
 		   	}
 
 	}
