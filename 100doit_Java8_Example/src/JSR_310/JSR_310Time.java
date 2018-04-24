@@ -15,6 +15,15 @@ import java.time.zone.ZoneRulesException;
 
 import org.junit.Test;
 
+/**
+ * 파일명	 	: JSR_310으로 시간표현.
+ * 설명		: Date나 Joda식을 이용하지 않고 시간을 표현 할 수 있는 JSR_310입니다.
+ * @author 100doit
+ *
+ */
+
+
+
 public class JSR_310Time {  
 	
 	//http://d2.naver.com/helloworld/645609

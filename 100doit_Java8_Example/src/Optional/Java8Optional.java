@@ -6,21 +6,23 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 /**
- * Java8 - Optional Example
+ * 파일명	 	: Java8의 Optional 예제
+ * 설명		: main함수에서 ofnullable() 메소드로 null과 value값을 모두 받아들인후, ifPresent()로 value값만 뽑아서 출력하는 형태의 예제입니다.
+ * @author 100doit
  *
- * @author Kayla
- * @since 2017-04-09
  */
+
+
 public class Java8Optional {
 	public static void main(String[] args) {
 
 		Long categoryId = 1L;
 		int limitWeightCondition = 5;
 
-		// List<Dumbbell> dumbbellList = findByCategoryIdNull(categoryId);
-		List<Dumbbell> dumbbellList = findByCategoryId(categoryId);
-		Optional<List<Dumbbell>> dumbbellListOptional = Optional.ofNullable(dumbbellList);
-		dumbbellListOptional.ifPresent(dumbbells -> {
+		//List<Dumbbell> dumbbellList = findByCategoryIdNull(categoryId);
+		List<Dumbbell> dumbbellList = findByCategoryId(categoryId);	
+		Optional<List<Dumbbell>> dumbbellListOptional = Optional.ofNullable(dumbbellList);			//ofNullable();
+		dumbbellListOptional.ifPresent(dumbbells -> {												//ifPresent();
 				System.out.println("----- [ 카테고리(" + categoryId + ")의 필터 결과 목록 조회 ] ----");
 				dumbbells
 					.stream()

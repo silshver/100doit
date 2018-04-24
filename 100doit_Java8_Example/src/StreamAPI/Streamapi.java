@@ -3,6 +3,14 @@ package StreamAPI;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
+/**
+ * 파일명	 	: Stream API
+ * 설명		: Stream API의 선언과 각 메소드의 사용 방법에 대한 예제입니다.
+ * @author 100doit
+ *
+ */
+
+
 public class Streamapi {
 	public static void main(String[] args) {
 		

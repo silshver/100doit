@@ -5,6 +5,14 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+/**
+ * 파일명	 	: 자바7과 자바8의 정의방식.
+ * 설명		: 자바7의 Collections의 리스트값 정의와 자바8의 간소화된 정의 방식의 비교입니다. 
+ * @author 100doit
+ *
+ */
+
+
 public class java7vsjava8 {
 
     public static void main(String[] args) {

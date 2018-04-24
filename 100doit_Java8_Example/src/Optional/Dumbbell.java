@@ -1,11 +1,12 @@
 package Optional;
 
 /**
- * 덤벨 정보
+ * 파일명	 	: 덤벨정보
+ * 설명		: 덤벨에대한 정보 입니다.
+ * @author 100doit
  *
- * @author Kayla
- * @since 2017-03-20
  */
+
 public class Dumbbell {
 	private String name;
 	private int weight;
