@@ -1,5 +1,14 @@
 package PrivateInterfaceMethod;
 
+
+/**
+ * 파일명	 	: Java8의 Interface method
+ * 설명		: Java8에서 추가된 default method의 대한 예제입니다. default method는 정적메소드로 자바8에서 새로 추가된 method 입니다.
+ * @author 100doit
+ *
+ */
+
+
 interface j8interface {	 
 		default void healthcare(String name) {
 			System.out.println(name + " registers for customer service.");
