@@ -20,7 +20,7 @@ public class Before7ARM {
 				fos.close();
 				dos.close();
 			} catch (IOException e) {
-				// log the exception
+				System.out.println("Exception 7");
 			}
 		}
 	}
