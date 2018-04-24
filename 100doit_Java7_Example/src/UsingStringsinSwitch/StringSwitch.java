@@ -1,6 +1,13 @@
 package UsingStringsinSwitch;
 
 
+/**
+ * 파일명	 	: String with Switch
+ * 설명		: Switch 문에 String 자료형을 사용하는 예제입니다.
+ * @author 100doit
+ *
+ */
+
 public class StringSwitch {
 	private static final String PENDING = "PENDING";
 	private static final String EXECUTE = "EXECUTE";

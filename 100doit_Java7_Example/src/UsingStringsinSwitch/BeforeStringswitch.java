@@ -1,5 +1,12 @@
 package UsingStringsinSwitch;
 
+/**
+ * 파일명	 	: if using String
+ * 설명		: Java7 이전에는 String 자료형이 Switch문에서 사용이 불가능하여 if 문을 사용했습니다.
+ * @author 100doit
+ *
+ */
+
 public class BeforeStringswitch {
 	
 	public static void processTrade(trade t) {
