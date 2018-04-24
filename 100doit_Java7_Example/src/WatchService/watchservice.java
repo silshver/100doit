@@ -23,7 +23,7 @@ public class watchservice {
 	private WatchService watchService = null;
 
 	private void init() {
-		path = Paths.get("C:\\Temp");
+		path = Paths.get("C:\\Temp");																	// 이 경로에 이벤트 생성, 수정 및 삭제
 		try {
 			watchService = FileSystems.getDefault().newWatchService();
 			path.register(watchService, ENTRY_CREATE, ENTRY_DELETE,
@@ -39,10 +39,10 @@ public class watchservice {
 		WatchKey key = null;
 		while(true) {
 			try {
-				key = watchService.take();
+				key = watchService.take();																// watchKey를 받음
 				for (WatchEvent<?> event : key.pollEvents()) {
 					Kind<?> kind = event.kind();
-					System.out.println("Event on " + event.context().toString() + " is " + kind);
+					System.out.println("Event on " + event.context().toString() + " is " + kind);		//이벤트 기록 출력
 				}
 			} catch (InterruptedException e) {
 				System.out.println("InterruptedException: "+e.getMessage());
