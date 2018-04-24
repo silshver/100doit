@@ -3,6 +3,14 @@ package Path;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+/**
+ * 파일명	 	: Path
+ * 설명		: Path를 사용하여 경로에 대해 간편하고 쉽게 관리할 수있다. 주로, 서버를 관리하는 작업에서 많이 쓰인다.
+ * @author 100doit
+ *
+ */
+
+
 public class PathInfo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
