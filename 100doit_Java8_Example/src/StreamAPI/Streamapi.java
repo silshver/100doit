@@ -15,13 +15,14 @@ public class Streamapi {
 	public static void main(String[] args) {
 		
 		/*
-		 * getStream
+		 * getStream : 스트림을 정의합니다.
 		 */
 		Arrays.asList(1,2,3).stream(); // (1)
 		Arrays.asList(1,2,3).parallelStream(); // (2)
 		
 		/*
 		 * foreach
+		 * 사용 인터페이스 Customer<T>
 		 */
 		Arrays.asList(1,2,3).stream()
 							.forEach(System.out::println); // 1,2,3
@@ -29,6 +30,7 @@ public class Streamapi {
 		
 		/*
 		 * map
+		 * 사용 인터페이스 Function<T>
 		 */
 		Arrays.asList(1,2,3).stream()
 							.map(i -> i*i)
@@ -50,6 +52,7 @@ public class Streamapi {
 		
 		/*
 		 * filter
+		 * 사용 인터페이스 Predicate<T>
 		 */
 		Arrays.asList(1,2,3).stream()
 							.filter(i-> 2>=i)
@@ -57,6 +60,7 @@ public class Streamapi {
 		
 		/*
 		 * flatMap
+		 * 사용 인터페이스 Function<T>
 		 */
 		Arrays.asList(Arrays.asList(1,2),Arrays.asList(3,4,5),Arrays.asList(6,7,8,9)).stream()
 							.flatMap(i -> i.stream())
@@ -64,6 +68,7 @@ public class Streamapi {
 		
 		/*
 		 * reduce
+		 * 사용 인터페이스 BinaryOperator<T, T>
 		 */
 		Arrays.asList(1,2,3).stream()
 							.reduce((a,b)-> a-b)
@@ -79,3 +84,27 @@ public class Streamapi {
 	}
 
 }
+
+/*
+ * 결과 값
+1
+2
+3
+1
+4
+9
+1
+2
+3
+1
+2
+1
+2
+3
+4
+5
+6
+7
+8
+9
+ */ 

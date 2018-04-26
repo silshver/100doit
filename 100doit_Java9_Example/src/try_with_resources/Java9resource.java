@@ -18,7 +18,7 @@ public class Java9resource {
 	public static void main(String[] args) throws FileNotFoundException {
 		// TODO Auto-generated method stub
 		BufferedReader br = new BufferedReader(new FileReader("C://readfile/input.txt"));
-		
+		// 외부에서 정의가 가능하고, try문에서 직접 받아서 사용 할 수 있다.
 		try (br) {
 			String line;
 			while (null != (line = br.readLine())) {

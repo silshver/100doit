@@ -23,7 +23,7 @@ public class watchservice {
 	private WatchService watchService = null;
 
 	private void init() {
-		path = Paths.get("C:\\Temp");																	// 이 경로에 이벤트 생성, 수정 및 삭제
+		path = Paths.get("C:\\Temp");				// 이 경로에 이벤트 생성, 수정 및 삭제
 		try {
 			watchService = FileSystems.getDefault().newWatchService();
 			path.register(watchService, ENTRY_CREATE, ENTRY_DELETE,
@@ -32,6 +32,7 @@ public class watchservice {
 			System.out.println("IOException "+ e.getMessage());
 		}
 	}
+	
 /**
  * The police will start making rounds 
  */
@@ -39,9 +40,9 @@ public class watchservice {
 		WatchKey key = null;
 		while(true) {
 			try {
-				key = watchService.take();																// watchKey를 받음
+				key = watchService.take();			// watchKey를 받음
 				for (WatchEvent<?> event : key.pollEvents()) {
-					Kind<?> kind = event.kind();
+					Kind<?> kind = event.kind();	// event의 종류를 받음 (Ex : ENTRY_CREATE, ENTRY_DELETE, ENTRY_MODIFY)
 					System.out.println("Event on " + event.context().toString() + " is " + kind);		//이벤트 기록 출력
 				}
 			} catch (InterruptedException e) {
@@ -59,4 +60,44 @@ public class watchservice {
 		police.doRounds();
 	}
 }
+
+/*
+ * 결과 값 
+Event on net.6352 is ENTRY_CREATE
+Event on net.6352 is ENTRY_MODIFY
+Event on net.6352 is ENTRY_DELETE
+Event on net.4028 is ENTRY_CREATE
+Event on net.4028 is ENTRY_MODIFY
+Event on net.4028 is ENTRY_DELETE
+Event on net.12548 is ENTRY_CREATE
+Event on net.12548 is ENTRY_MODIFY
+Event on net.12548 is ENTRY_DELETE
+Event on net.13120 is ENTRY_CREATE
+Event on net.13120 is ENTRY_MODIFY
+Event on net.13120 is ENTRY_DELETE
+Event on net.7936 is ENTRY_CREATE
+Event on net.7936 is ENTRY_MODIFY
+Event on net.7936 is ENTRY_DELETE
+Event on net.6448 is ENTRY_CREATE
+Event on net.6448 is ENTRY_MODIFY
+Event on net.6448 is ENTRY_DELETE
+Event on net.7116 is ENTRY_CREATE
+Event on net.7116 is ENTRY_MODIFY
+Event on net.7116 is ENTRY_DELETE
+Event on net.788 is ENTRY_CREATE
+Event on net.788 is ENTRY_MODIFY
+Event on net.788 is ENTRY_DELETE
+Event on net.12716 is ENTRY_CREATE
+Event on net.12716 is ENTRY_MODIFY
+Event on net.12716 is ENTRY_DELETE
+Event on net.9804 is ENTRY_CREATE
+Event on net.9804 is ENTRY_MODIFY
+Event on net.9804 is ENTRY_DELETE
+Event on net.5380 is ENTRY_CREATE
+Event on net.5380 is ENTRY_MODIFY
+Event on net.5380 is ENTRY_DELETE
+Event on net.13864 is ENTRY_CREATE
+Event on net.13864 is ENTRY_MODIFY
+Event on net.13864 is ENTRY_DELETE
+ */
 

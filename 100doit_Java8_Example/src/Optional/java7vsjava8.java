@@ -30,6 +30,7 @@ public class java7vsjava8 {
         });
 
         // java8 리스트 값 비교 정렬
+        // FuncionalInterface인 Comparator의 comparing을 사용하여 덤벨의 무게를 받아온다.
         dumbbellList.sort(Comparator.comparing(Dumbbell::getWeight));
 
         for ( Dumbbell dumbbell : dumbbellList ) {
@@ -37,3 +38,10 @@ public class java7vsjava8 {
         }
     }
 }
+
+/*
+ * 결과 값
+java7vsjava8.Dumbbell{name = '스파이더', weight = 5}
+java7vsjava8.Dumbbell{name = '나이키', weight = 10}
+java7vsjava8.Dumbbell{name = '아디다스', weight = 15}
+ */

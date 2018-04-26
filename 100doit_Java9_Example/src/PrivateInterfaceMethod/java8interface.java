@@ -40,8 +40,15 @@ class inter8 implements j8interface{
 public class java8interface {
 	public static void main (String[] args) {
 		new inter8().healthcare(null);
-		new inter8().consult(null);
-		
+		new inter8().consult(null);		
 	}
 	
 }
+
+/*
+ * °á°ú °ª
+null registers for customer service.
+-- get HealthCare Service.
+null registers for customer service.
+-- get Consultation Service.
+ */

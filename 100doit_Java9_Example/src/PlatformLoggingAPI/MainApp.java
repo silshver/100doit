@@ -29,3 +29,19 @@ public class MainApp {
 		LOGGER3.log(Level.INFO, "Hello World");
 	}
 }
+
+/*
+ * 결과 값
+4월 26, 2018 3:10:12 오후 PlatformLoggingAPI.MainApp main
+심각: This is just an Error Log test.
+4월 26, 2018 3:10:12 오후 PlatformLoggingAPI.MainApp main
+정보: Hello World!
+4월 26, 2018 3:10:12 오후 PlatformLoggingAPI.MainApp main
+심각: This is just an Error Log test.
+4월 26, 2018 3:10:12 오후 PlatformLoggingAPI.MainApp main
+정보: Hello World!
+4월 26, 2018 3:10:12 오후 PlatformLoggingAPI.MainApp main
+심각: This is just an Error Log test.
+4월 26, 2018 3:10:12 오후 PlatformLoggingAPI.MainApp main
+정보: Hello World
+ */

@@ -32,3 +32,11 @@ public class StackWalking
       sw.forEach(System.out::println);
    }
 }
+
+/*
+ * °á°ú °ª
+Stack_WalkingAPI.StackWalking.c(StackWalking.java:32)
+Stack_WalkingAPI.StackWalking.b(StackWalking.java:26)
+Stack_WalkingAPI.StackWalking.a(StackWalking.java:21)
+Stack_WalkingAPI.StackWalking.main(StackWalking.java:16)
+ */

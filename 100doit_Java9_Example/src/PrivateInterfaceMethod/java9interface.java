@@ -42,6 +42,7 @@ class inter9 implements j9interface{
 	}
 	/*
 	 * can not Override private
+	 * private를 사용한 register 불러서 사용할 수 없다.
 	 */
 	private void register(String name) {
 		System.out.println(name + " registers for customer service.");
@@ -56,3 +57,11 @@ public class java9interface {
 	}
 	
 }
+
+/*
+ * 결과 값
+null registers for customer service.
+-- get HealthCare Service.
+null registers for customer service.
+-- get Consultation Service.
+ */

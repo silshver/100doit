@@ -50,3 +50,8 @@ public class StringSwitch {
 	}
 
 }
+
+/*
+ * °á°ú°ª
+This is the New Trade
+ */

@@ -25,3 +25,11 @@ public class PathInfo {
 		// File Parent:c:Temp
 	}
 }
+
+/*
+ * °á°ú °ª
+Number of Nodes:2
+File Name:temp
+File Root:c:\
+File Parent:c:\Temp
+ */

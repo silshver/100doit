@@ -35,3 +35,17 @@ public class Process {
 	}
 	
 }
+
+/*
+ * 결과 값 : 이런 형식으로 실행중인 프로세스들을 출력한다.
+---------
+Id: 13904
+isAlive(): true
+number of childrens: 0
+isSupportsNormalTermination(): false
+Info: [user: Optional[DESKTOP-E159PP3\100doit], cmd: C:\Program Files\Java\jre-10.0.1\bin\javaw.exe, startTime: Optional[2018-04-26T06:00:48.987Z], totalTime: Optional[PT1.265625S]]
+Info arguments().isPresent(): false
+Info command().isPresent(): true
+Info totalCpuDuration().isPresent(): true
+Info user().isPresent(): true
+ */

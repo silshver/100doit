@@ -37,6 +37,9 @@ public class BeforeStringswitch {
 		trade t = new trade();
 		processTrade(t);
 	}
-
-
 }
+
+/*
+ * °á°ú°ª
+This is the New Trade 
+ */

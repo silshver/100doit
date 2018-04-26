@@ -21,8 +21,15 @@ public class Java8Optional {
 
 		//List<Dumbbell> dumbbellList = findByCategoryIdNull(categoryId);
 		List<Dumbbell> dumbbellList = findByCategoryId(categoryId);	
-		Optional<List<Dumbbell>> dumbbellListOptional = Optional.ofNullable(dumbbellList);			//ofNullable();
-		dumbbellListOptional.ifPresent(dumbbells -> {												//ifPresent();
+		/*
+		 * ofNullable(); : null이나 null이 아닌 값 모두 받아올 수 있는 함수입니다. nullpointException이 발생하지 않습니다.
+		 * 여기에서 이 함수를 사용한 이유는  주석처리된 코드를 사용할 경우, null값만 반환하여 null값을 받을 경우를 보여 주기 위해서 사용하였습니다. 
+		 */
+		Optional<List<Dumbbell>> dumbbellListOptional = Optional.ofNullable(dumbbellList);	
+		/*
+		 * ifPresent(); : 이 함수는 값이 있을 경우에만 값을 받아오는 함수입니다. null이 올 경우 무시하고 다음을 진행합니다.
+		 */
+		dumbbellListOptional.ifPresent(dumbbells -> {												
 				System.out.println("----- [ 카테고리(" + categoryId + ")의 필터 결과 목록 조회 ] ----");
 				dumbbells
 					.stream()
@@ -54,3 +61,22 @@ public class Java8Optional {
 		return null;
 	}
 }
+
+/*
+ * 결과 값 : value
+----- [ 카테고리(1)의 덤벨 목록 조회 ] ----
+java7vsjava8.Dumbbell{name = '덤벨-10kg', weight = 10}
+java7vsjava8.Dumbbell{name = '덤벨-3kg', weight = 3}
+java7vsjava8.Dumbbell{name = '덤벨-7kg', weight = 7}
+java7vsjava8.Dumbbell{name = '덤벨-5kg', weight = 5}
+----- [ 카테고리(1)의 필터 결과 목록 조회 ] ----
+java7vsjava8.Dumbbell{name = '덤벨-10kg', weight = 10}
+java7vsjava8.Dumbbell{name = '덤벨-7kg', weight = 7}
+ */
+
+/*
+ * 결과 값 : null
+----- [ 카테고리(1)의 덤벨 목록 조회 ] ----
+조회 결과가 없음!
+ */
+

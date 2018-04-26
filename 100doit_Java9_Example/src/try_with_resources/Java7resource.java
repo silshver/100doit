@@ -14,7 +14,7 @@ import java.io.IOException;
 
 public class Java7resource {
 	public static void main(String[] args) {
-		
+		// try문 내부에서 정의를 해야한다.
 		try (BufferedReader br = new BufferedReader(new FileReader("C://readfile/input.txt"))) {
 			String line;
 			while (null != (line = br.readLine())) {
@@ -25,3 +25,4 @@ public class Java7resource {
 		}
 	}
 }
+

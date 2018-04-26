@@ -7,11 +7,15 @@ package Lambda;
  *
  */
 
-
 public class LambdaExpression {
 	public static void main(String[] args) {
-		new Thread(()->{
+		new Thread(()->{							// void를 받는 Runnable()과 run() 모두 생략.
 			System.out.println("Hello World.");
 		}).start();
 	}
 }
+
+/*
+ * 결과
+Hello World.
+ */
