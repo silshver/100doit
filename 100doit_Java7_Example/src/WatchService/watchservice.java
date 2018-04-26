@@ -13,7 +13,7 @@ import static java.nio.file.StandardWatchEventKinds.*;
 
 /**
  * 파일명	 	: watch service
- * 설명		: Watch Service를 사용해서, 기록을 남기는 서비스 예제입니다. 서버에서 어떤 이벤트가 실행되는지 알아볼때 사용할 수 있습니다.
+ * 설명		: Watch Service를 사용해서, 기록을 남기는 서비스 예제입니다. 서버에서 어떤 이벤트가 실행되는지 알아볼 때 사용할 수 있습니다.
  * @author 100doit
  *
  */
